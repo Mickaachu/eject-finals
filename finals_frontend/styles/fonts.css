@@ -1,0 +1,129 @@
+/* ------------------------------ GOTHAM FONTS ------------------------------ */
+@font-face {
+  font-family: "Gotham";
+  src: url("/fonts/gotham/GothamBold.ttf");
+  font-weight: bolder;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gotham";
+  src: url("/fonts/gotham/GothamBoldItalic.ttf");
+  font-weight: bolder;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gotham";
+  src: url("/fonts/gotham/GothamBook.ttf");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gotham";
+  src: url("/fonts/gotham/GothamBookItalic.ttf");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gotham";
+  src: url("/fonts/gotham/GothamLight.ttf");
+  font-weight: lighter;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gotham";
+  src: url("/fonts/gotham/GothamLightItalic.ttf");
+  font-weight: lighter;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gotham";
+  src: url("/fonts/gotham/GothamMedium.ttf");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gotham";
+  src: url("/fonts/gotham/GothamMediumItalic.ttf");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* ---------------------------- MONTSERRAT FONTS ---------------------------- */
+@font-face {
+  font-family: "Montserrat";
+  src: url("fonts/montserat/Montserrat-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("fonts/montserat/Montserrat-Italic.ttf");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("public/fonts/montserat/Montserrat-Medium.ttf");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("public/fonts/montserat/Montserrat-MediumItalic.ttf");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("public/fonts/montserat/Montserrat-SemiBold.ttf");
+  font-weight: bolder;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("public/fonts/montserat/Montserrat-SemiBoldItalic.ttf");
+  font-weight: bolder;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("public/fonts/montserat/Montserrat-Light.ttf");
+  font-weight: lighter;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("public/fonts/montserat/Montserrat-LightItalic.ttf");
+  font-weight: lighter;
+  font-style: italic;
+  font-display: swap;
+}

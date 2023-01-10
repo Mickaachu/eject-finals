@@ -1,0 +1,48 @@
+.formDiv {
+    background-color: #f5f5f5;
+    padding: 1em;
+    filter: var(--drop-shadow);
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.rowElements {
+    justify-content: space-between;
+    gap: 0.5em;
+}
+
+.textBox,
+.textBox:focus,
+.submitBtn {
+    border: 1px;
+    border-style: solid;
+    border-color: gray;
+    padding: 0.75em;
+    resize: none;
+}
+
+.boolSelector {
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.submitBtn {
+    padding: 0.5em;
+    border-radius: 0.5em;
+    background-color: white;
+}
+
+.submitBtn:hover {
+    cursor: pointer;
+}
+
+/* ---------------------------------------------------------- */
+/*                        Text Elements                       */
+/* ---------------------------------------------------------- */
+#formTitle {
+    margin-bottom: 0.25em;
+}
+
+#boolSelector {
+    margin-bottom: 0.5em;
+}
