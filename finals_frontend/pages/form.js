@@ -6,10 +6,11 @@ function MyForm() {
     const onSubmit = data => console.log(data);
 
     return (
-        <>
-            <div className={css.formDiv}>
+
+        <div>
+            <form className={css.formDiv} onSubmit={handleSubmit(onSubmit)}>
                 <h1 id={css.formTitle}>Registration Form</h1>
-                <div className={css.rowElements}>
+                 <div className={css.rowElements}>
                     <input
                         className={css.textBox}
                         type='text'
@@ -92,12 +93,13 @@ function MyForm() {
                     }}>
                     <input
                         className={css.submitBtn}
-                        type='button'
+                        type='submit'
                         value='Submit'
                         name="submitBtn" />
                 </div>
-            </div>
-        </>
+            </form>
+            
+        </div>
     )
 }
 export default MyForm;
