@@ -1,7 +1,10 @@
 import css from "../styles/form.module.css"
+import { useForm } from 'react-hook-form';
 
 function MyForm() {
-    
+    const { register, handleSubmit } = useForm();
+    const onSubmit = data => console.log(data);
+
     return (
         <>
             <div className={css.formDiv}>
@@ -12,12 +15,14 @@ function MyForm() {
                         type='text'
                         placeholder="First Name"
                         name="firstname"
+                        {...register("firstname")}
                     />
                     <input
                         className={css.textBox}
                         type='text'
                         placeholder="Last Name"
                         name="lastname"
+                        {...register("lastname")}
                     />
                 </div>
                 <div className={css.rowElements}>
@@ -26,12 +31,14 @@ function MyForm() {
                         type='email'
                         placeholder="Email"
                         name="email"
+                        {...register("email")}
                     />
                     <input
                         className={css.textBox}
                         type='text'
                         placeholder="Contact Number"
                         name="contactnum"
+                        {...register("lastname")}
                     />
                 </div>
                 <div className={css.rowElements}>
@@ -39,6 +46,7 @@ function MyForm() {
                         className={css.textBox}
                         placeholder="Address"
                         name="address"
+                        {...register("address")}
                     />
                     <div className={css.boolSelector}
                         style={{
@@ -50,7 +58,8 @@ function MyForm() {
                                 <input
                                     className={css.textBox}
                                     type='radio'
-                                    name="oldTUPStudent"
+                                    value="True"
+                                    {...register("oldStudent")}
                                 />
                                 <h2>Yes</h2>
                             </div>
@@ -58,7 +67,8 @@ function MyForm() {
                                 <input
                                     className={css.textBox}
                                     type='radio'
-                                    name="oldTUPStudent"
+                                    value="False"
+                                    {...register("oldStudent")}
                                 />
                                 <h2>No</h2>
                             </div>
