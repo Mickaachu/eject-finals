@@ -1,6 +1,7 @@
 import css from "../styles/form.module.css"
 
-export default function MyForm() {
+function MyForm() {
+    
     return (
         <>
             <div className={css.formDiv}>
@@ -89,3 +90,4 @@ export default function MyForm() {
         </>
     )
 }
+export default MyForm;
