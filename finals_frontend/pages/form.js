@@ -6,7 +6,7 @@ function MyForm() {
     const { register, handleSubmit } = useForm();
     const onSubmit = (data) => {
 
-        Axios.post('http://localhost:5000/register'), {
+        Axios.post('http://localhost:5000/register', {
             firstName: data.firstName,
             lastName: data.lastName,
             email: data.email,
@@ -14,7 +14,15 @@ function MyForm() {
             address: data.address,
             oldStudent: data.oldStudent,
             reason: data.reason
-        } 
+
+        })
+        .then((response) => {
+            console.log(response)
+        }) 
+        .catch((err) => {
+            console.log(err)
+        })
+        
     }
    
     return (
@@ -99,6 +107,7 @@ function MyForm() {
                             'width': '100%'
                         }}
                         rows={3}
+                        {...register("reason")}
                     />
                 </div>
                 <div
