@@ -1,9 +1,16 @@
 import css from "../styles/form.module.css";
 import { useForm } from 'react-hook-form';
+import { useRouter } from 'next/router';
 import Axios from 'axios';
 
 function MyForm() {
+    let router = useRouter();
     const { register, handleSubmit } = useForm();
+
+    function redirect() {
+        router.push('/success')
+    }
+    
     const onSubmit = (data) => {
 
         Axios.post('http://localhost:5000/register', {
@@ -18,10 +25,12 @@ function MyForm() {
         })
         .then((response) => {
             console.log(response)
+            
         }) 
         .catch((err) => {
             console.log(err)
         })
+        redirect();
         
     }
    

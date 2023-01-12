@@ -6,6 +6,8 @@ const app = express();
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
+app.use(express.json())
+
 app.use(cors());
 
 const con = mysql.createConnection({
@@ -24,7 +26,6 @@ app.post('/register', (req,res) => {
 	const address = req.body.address;
 	const oldStudent = req.body.oldStudent;
 	const reason = req.body.reason;
-	console.log(firstName);
 	
 	con.query(
 		'INSERT INTO student (firstName, lastName, email, contactNumber,address, oldStudent, reason) VALUES (?,?,?,?,?,?,?) ',
@@ -35,10 +36,6 @@ app.post('/register', (req,res) => {
 		})
 
 })
-app.get("/", (req,res) => {
-	
-	res.send('Hello World!')
-});
 
 
 
